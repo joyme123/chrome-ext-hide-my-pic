@@ -3,7 +3,7 @@
 
 ## 安装
 
-在[这里](https://github.com/joyme123/chrome-ext-hide-my-pic/releases)下载crx扩展文件，然后拖动到Chrome的扩展程序页面，之后会自动安装。
+在[这里](https://github.com/joyme123/chrome-ext-hide-my-pic/releases)下载crx扩展文件，然后拖动到Chrome的扩展程序页面，之后会自动安装。(需要打开开发者模式才可以安装)
 
 ## 使用
 

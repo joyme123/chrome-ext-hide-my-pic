@@ -6,7 +6,7 @@ Chrome extentsion for hide NSFW(Not Safe/Suitable For Work) images in one stepã€
 
 ## How To Install
 
-Download crx extension [here](https://github.com/joyme123/chrome-ext-hide-my-pic/releases), go to chrome extension page, drag the crx file to put on this page, then you can install it.
+Download crx extension [here](https://github.com/joyme123/chrome-ext-hide-my-pic/releases), go to chrome extension page, drag the crx file to put on this page, then you can install it.(developer mode)
 
 ## How To Use
 
