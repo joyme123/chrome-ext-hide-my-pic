@@ -5,7 +5,6 @@
   "main": "index.js",
   "dependencies": {
     "@tensorflow/tfjs": "^0.15.1",
-    "nsfwjs": "./src/nsfw",
     "requirejs": "^2.3.6"
   },
   "devDependencies": {

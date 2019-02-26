@@ -6,28 +6,25 @@
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
     "background": {
         "scripts": [
-            "index.js"
+            "background.js"
         ],
-        "persistent": false
+        "persistent": true
     },
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "css": [],
+          "js": ["content_script.js"]
+        }
+      ],
     "commands": {
         "studing_now": {
             "suggested_key": {
-                "default": "Ctrl+Shift+Z",
-                "mac": "MacCtrl+Shift+Z"
+                "default": "Ctrl+Shift+E",
+                "mac": "MacCtrl+Shift+E"
             },
             "description": "studing now"
-        },
-        "_execute_browser_action": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+Q",
-                "mac": "MacCtrl+Shift+Q"
-            },
-            "description": "studing ddd"
         }
-    },
-    "browser_action": {
-        "default_title": "Make this page red"
     },
     "permissions": [
         "storage",
