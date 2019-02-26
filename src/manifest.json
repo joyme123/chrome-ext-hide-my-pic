@@ -32,6 +32,11 @@
         "activeTab"
     ],
     "web_accessible_resources":[
-        "assets/icon.jpg"
-    ]
+        "assets/icon.jpg",
+        "assets/i_love_coding.png"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+      }
 }

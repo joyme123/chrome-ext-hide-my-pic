@@ -7,8 +7,8 @@ module.exports = {
     mode: 'production',
     devtool: "inline-source-map",
     entry: {
-        background:'./src/background.ts',
-        content_script:'./src/content_script.js'
+        background: './src/background.ts',
+        content_script: './src/content_script.js'
     },
     output: {
         filename: '[name].js',
@@ -39,20 +39,25 @@ module.exports = {
         ]
     },
     plugins: [
-        new CopyWebpackPlugin([{
-            from: __dirname + '/src/assets',
-            to: __dirname + '/dist/assets'
-        }, {
-            from: __dirname + '/src/manifest.json',
-            to: __dirname + '/dist/manifest.json'
-        }]),
+        new CopyWebpackPlugin([
+            {
+                from: __dirname + '/src/assets',
+                to: __dirname + '/dist/assets'
+            }, 
+            {
+                from: __dirname + '/src/manifest.json',
+                to: __dirname + '/dist/manifest.json'
+            },
+            {
+                from: __dirname + '/src/options.html',
+                to: __dirname + '/dist/options.html'
+            },
+            {
+                from: __dirname + '/src/options.js',
+                to: __dirname + '/dist/options.js'
+            },
+        ]),
         new CleanWebpackPlugin(['dist']),
-        new HtmlWebpackPlugin({
-            inject: false,
-            template: require('html-webpack-template'),
-            title: '我爱学习',
-            bodyHtmlSnippet: '<img id="img" src="assets/icon.jpg">',
-        })
     ],
     resolve: {
         extensions: ['.tsx', '.ts', '.js']

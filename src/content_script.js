@@ -4,9 +4,10 @@ import { array } from "@tensorflow/tfjs-data";
 
 var globalImgElements
 
+console.log("content script 加载")
+
 chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
-        console.log("content_script收到消息", request);
         if (request.action == "match_images") {
             globalImgElements = document.getElementsByTagName("img");
 
@@ -18,8 +19,7 @@ chrome.runtime.onMessage.addListener(
 
             sendResponse({action: 'classify', imgSrc: imgSrcs});
         } else if (request.action == "classify") {
-            console.log("收到屏蔽index", request.block)
-            globalImgElements.item(request.block).src = chrome.extension.getURL('assets/icon.jpg');;
+            globalImgElements.item(request.block).src = chrome.extension.getURL('assets/i_love_coding.png');;
         }
     }
 );

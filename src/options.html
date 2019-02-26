@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Test Extension Options</title>
+    <meta charset="utf-8">
+    <style>
+        .main {
+            width: 200px;
+        }
+        .select {
+            height: 30px;
+        }
+
+        .save {
+            border: 1px solid white;
+            background-color: cadetblue;
+            color: white;
+            padding: 6px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- <div class="content">
+            <select class="select" id="autoBlock">
+                <option value=true>自动屏蔽</option>
+                <option value=false>快捷键屏蔽:ctrl+shift+E</option>
+            </select>
+        </div> -->
+
+        <div class="content">
+
+            <label>
+                <input type="checkbox" id="sexy">
+                sexy
+            </label>
+
+            <label>
+                <input type="checkbox" id="porn">
+                porn
+            </label>
+
+
+            <label>
+                <input type="checkbox" id="hentai">
+                hentai
+            </label>
+        </div>
+
+        <div class="content">
+            <div id="status"></div>
+            <button class="save" id="save">保存以上的快速屏蔽选项</button>
+        </div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+
+</html>
