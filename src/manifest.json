@@ -1,0 +1,37 @@
+{
+    "name": "i love study",
+    "description": "i love study",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+    "background": {
+        "scripts": [
+            "index.js"
+        ],
+        "persistent": false
+    },
+    "commands": {
+        "studing_now": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Z",
+                "mac": "MacCtrl+Shift+Z"
+            },
+            "description": "studing now"
+        },
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Q",
+                "mac": "MacCtrl+Shift+Q"
+            },
+            "description": "studing ddd"
+        }
+    },
+    "browser_action": {
+        "default_title": "Make this page red"
+    },
+    "permissions": [
+        "storage",
+        "declarativeContent",
+        "activeTab"
+    ]
+}
