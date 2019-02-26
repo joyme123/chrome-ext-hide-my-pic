@@ -12,11 +12,15 @@
     },
     "content_scripts": [
         {
-          "matches": ["*://*/*"],
-          "css": [],
-          "js": ["content_script.js"]
+            "matches": [
+                "*://*/*"
+            ],
+            "css": [],
+            "js": [
+                "content_script.js"
+            ]
         }
-      ],
+    ],
     "commands": {
         "studing_now": {
             "suggested_key": {
@@ -31,12 +35,18 @@
         "declarativeContent",
         "activeTab"
     ],
-    "web_accessible_resources":[
+    "web_accessible_resources": [
         "assets/icon.jpg",
         "assets/i_love_coding.png"
     ],
+    "icons": {
+        "16": "assets/icon.png",
+        "32": "assets/icon.png",
+        "48": "assets/icon.png",
+        "128": "assets/icon.png"
+    },
     "options_ui": {
         "page": "options.html",
         "open_in_tab": false
-      }
+    }
 }
