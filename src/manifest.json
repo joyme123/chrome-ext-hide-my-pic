@@ -30,5 +30,8 @@
         "storage",
         "declarativeContent",
         "activeTab"
+    ],
+    "web_accessible_resources":[
+        "assets/icon.jpg"
     ]
 }
