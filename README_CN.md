@@ -7,7 +7,7 @@
 
 ## 编译安装
 
-使用 `npm install` 来安装所有的依赖库. 之后运行 `npm run build` 来运行. 这会生成一个 `dist` 目录. 在chrome扩展页从 `dist` 目录`加载已解压的扩展`即可。
+使用 `npm install` 来安装所有的依赖库. 之后运行 `npm run build` 来编译. 这会生成一个 `dist` 目录. 在chrome扩展页从 `dist` 目录`加载已解压的扩展`即可。
 
 ## 使用
 
